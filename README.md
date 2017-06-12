@@ -25,27 +25,27 @@ The core basis of this boilerplate is NPM, the script manages all the workflow t
 
 ### List of scripts
 
-		"info": "echo 'npm as a build tool: ¦̵̱ ̵̱ ̵̱ ̵̱ ̵̱(̢ ̡͇̅└͇̅┘͇̅ (▤8כ−◦'",
-		"fold:clean": "rm -R -rf dist",
-		"fold:assets": "mkdir -p assets/{css,img,fav,js,typo}",
-		"fold:dist": "mkdir -p dist/public/{css,img,fav,js,typo}",
-		"fold:files": "cp -R -f assets/js assets/img assets/fav assets/typo  assets/*.html  assets/*.xml  assets/*.txt assets/*.json  assets/typo assets/CNAME dist/public/",
-		"css:concat": "cat assets/css/*.css > dist/public/css/bundle.css",
-		"css:comb": "csscomb dist/public/bundle.css",
-		"css:minify": "cleancss dist/public/css/bundle.css -o dist/public/css/bundle.min.css",
-		"build:css": "echo '=> build:css' && npm run css:concat && npm run css:comb && npm run css:minify",
-		"img:min": "imagemin assets/img/*.jpg dist/public/img/*.jpg -p",
-		"svg:clean": "svgo -f assets/img/icons",
-		"svg:opt": "svgo -f assets/img",
-		"svg:icons": "svgo -f assets/img/icons && svg-sprite-generate -d assets/img/icons -o dist/public/img/icons.svg",
-		"js:lint": "jshint assets/scripts/*.js",
-		"js:minify": "uglifyjs assets/js/*.js -o dist/public/js/*.js",
-		"dist": "npm run fold:clean && npm run fold:assets && npm run fold:dist && npm run cp:files && npm run build:css",
-		"watch": "watch 'npm run dist' assets/css/",
-		"watch:nodemon": "nodemon -e css -x",
-		"livereload": "live-reload --port 9091 dist/public",
-		"browsersync": "browser-sync start --server --files 'dist/css/*.css, dist/js/*.js'",
-		"server": "http-server dist/public/"
+	"info": "echo 'npm as a build tool: ¦̵̱ ̵̱ ̵̱ ̵̱ ̵̱(̢ ̡͇̅└͇̅┘͇̅ (▤8כ−◦'",
+	"fold:clean": "rm -R -rf dist",
+	"fold:assets": "mkdir -p assets/{css,img,fav,js,typo}",
+	"fold:dist": "mkdir -p dist/public/{css,img,fav,js,typo}",
+	"fold:files": "cp -R -f assets/js assets/img assets/fav assets/typo  assets/*.html  assets/*.xml  assets/*.txt assets/*.json  assets/typo assets/CNAME dist/public/",
+	"css:concat": "cat assets/css/*.css > dist/public/css/bundle.css",
+	"css:comb": "csscomb dist/public/bundle.css",
+	"css:minify": "cleancss dist/public/css/bundle.css -o dist/public/css/bundle.min.css",
+	"build:css": "echo '=> build:css' && npm run css:concat && npm run css:comb && npm run css:minify",
+	"img:min": "imagemin assets/img/*.jpg dist/public/img/*.jpg -p",
+	"svg:clean": "svgo -f assets/img/icons",
+	"svg:opt": "svgo -f assets/img",
+	"svg:icons": "svgo -f assets/img/icons && svg-sprite-generate -d assets/img/icons -o dist/public/img/icons.svg",
+	"js:lint": "jshint assets/scripts/*.js",
+	"js:minify": "uglifyjs assets/js/*.js -o dist/public/js/*.js",
+	"dist": "npm run fold:clean && npm run fold:assets && npm run fold:dist && npm run cp:files && npm run build:css",
+	"watch": "watch 'npm run dist' assets/css/",
+	"watch:nodemon": "nodemon -e css -x",
+	"livereload": "live-reload --port 9091 dist/public",
+	"browsersync": "browser-sync start --server --files 'dist/css/*.css, dist/js/*.js'",
+	"server": "http-server dist/public/"
 
 ## Details
 

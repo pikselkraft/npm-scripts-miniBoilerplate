@@ -50,25 +50,25 @@ The core basis of this boilerplate is NPM, the script manages all the workflow t
 ## Details
 
 * Copy tasks
- * manage the creation of folders and copy the files in dist/public
+	* manage the creation of folders and copy the files in dist/public
 * CSS tasks
- * Concat CSS files
- * Comb -> watch quality of the css
- * Minify -> minify the CSS
- * Combine all the tasks
+  * Concat CSS files
+  * Comb -> watch quality of the css
+  * Minify -> minify the CSS
+  * Combine all the tasks
 * Img and svg tasks
- * Optimise of the images
- * Optimise SVG files (clean)
- * Optimise SVG files
- * Generate SVG sprite
+  * Optimise of the images
+  * Optimise SVG files (clean)
+  * Optimise SVG files
+  * Generate SVG sprite
 * JS tasks
- * Inspect JS files quality
- * Minify JS files
+  * Inspect JS files quality
+  * Minify JS files
 * Dist: Build task, create folder, copy files, build css
 * Dev tools
- * Watch
- * Livereload
- * Test server
+  * Watch
+  * Livereload
+  * Test server
 
 ## Liens utiles
 

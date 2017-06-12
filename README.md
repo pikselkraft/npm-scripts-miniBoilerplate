@@ -75,7 +75,7 @@ The core basis of this boilerplate is NPM, the script manages all the workflow t
 * [**NPM**](https://www.npmjs.com)
 * [Atomic css](http://bradfrost.com/blog/post/atomic-web-design/)
 * [BEM css](http://getbem.com/introduction/)
- * Website of KNACSS : http://knacss.com
- * [**Documentation**](https://github.com/raphaelgoetter/KNACSS/tree/master/doc)
- * [**Documentation**](https://github.com/raphaelgoetter/KNACSS/tree/master/doc)
- * On Alsacreations.com [FR]: ["KNACSS framework"](http://www.alsacreations.com/tuto/lire/1577-decouverte-du-framework-css-KNACSS.html)
+* Website of KNACSS : http://knacss.com
+  * [**Documentation**](https://github.com/raphaelgoetter/KNACSS/tree/master/doc)
+  * [**Documentation**](https://github.com/raphaelgoetter/KNACSS/tree/master/doc)
+  * On Alsacreations.com [FR]: ["KNACSS framework"](http://www.alsacreations.com/tuto/lire/1577-decouverte-du-framework-css-KNACSS.html)

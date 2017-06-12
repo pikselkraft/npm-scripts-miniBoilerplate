@@ -1,0 +1,15 @@
+{
+  "short_name": "Pixelcraft",
+  "name": "Pixelcraft",
+  "icons": [
+    {
+      "src":"fav/favicon-196x196.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/?utm_source=homescreen",
+  "background_color": "#FFF3EB",
+  "theme_color": "#F44141",
+  "display": "standalone"
+}

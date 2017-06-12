@@ -1,0 +1,62 @@
+{
+  "name": "npm-script-mini-boilerplate",
+  "version": "1.0.0",
+  "description": "NPM build script for front-end workflow",
+  "main": "index.js",
+  "author": "pikselcraft",
+  "license": "ISCi",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pikselkraft/npm-scripts-miniBoilerplate"
+  },
+  "bugs": {
+    "url": "https://github.com/pikselkraft/npm-scripts-miniBoilerplate"
+  },
+  "homepage": "https://github.com/pikselkraft/npm-scripts-miniBoilerplate",
+  "config": {
+    "path": "dist/public/"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.18.5",
+    "clean-css": "^3.4.22",
+    "concat-cli": "^4.0.0",
+    "csscomb": "^3.1.7",
+    "eslint": "^3.12.2",
+    "htmlmin": "0.0.7",
+    "http-server": "^0.9.0",
+    "imagemin": "^5.2.2",
+    "jshint": "^2.9.4",
+    "live-reload": "^1.1.0",
+    "nodemon": "^1.11.0",
+    "opener": "^1.4.2",
+    "stylelint": "^7.6.0",
+    "svg-sprite-generator": "0.0.7",
+    "svgo": "^0.7.1",
+    "uglify-js": "^2.7.5",
+    "watch": "^1.0.1"
+  },
+  "scripts": {
+    "info": "echo 'npm as a build tool: ¦̵̱ ̵̱ ̵̱ ̵̱ ̵̱(̢ ̡͇̅└͇̅┘͇̅ (▤8כ−◦'",
+    "fold:clean": "rm -R -rf dist",
+    "fold:assets": "mkdir -p assets/{css,img,fav,js,typo}",
+    "fold:dist": "mkdir -p dist/public/{css,img,fav,js,typo}",
+		"fold:files": "cp -R -f assets/js assets/img assets/fav assets/typo  assets/*.html  assets/*.xml  assets/*.txt assets/*.json  assets/typo assets/CNAME dist/public/",
+    "css:concat": "cat assets/css/*.css > dist/public/css/bundle.css",
+    "css:comb": "csscomb dist/public/bundle.css",
+    "css:minify": "cleancss dist/public/css/bundle.css -o dist/public/css/bundle.min.css",
+    "build:css": "echo '=> build:css' && npm run css:concat && npm run css:comb && npm run css:minify",
+    "img:min": "imagemin assets/img/*.jpg dist/public/img/*.jpg -p",
+    "svg:clean": "svgo -f assets/img/icons",
+    "svg:opt": "svgo -f assets/img",
+    "svg:icons": "svgo -f assets/img/icons && svg-sprite-generate -d assets/img/icons -o dist/public/img/icons.svg",
+    "js:lint": "jshint assets/js/*.js",
+    "js:minify": "uglifyjs assets/js/*.js -o dist/public/js/*.js",
+    "dist": "npm run fold:clean && npm run fold:assets && npm run fold:dist && npm run fold:files && npm run build:css",
+    "watch": "watch 'npm run dist' assets/css/",
+    "watch:nodemon": "nodemon -e css -x",
+    "livereload": "live-reload --port 9091 dist/public",
+    "browsersync": "browser-sync start --server --files 'dist/css/*.css, dist/js/*.js'",
+    "server": "http-server dist/public/"
+  }
+}

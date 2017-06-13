@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "NPM build script for front-end workflow",
   "main": "index.js",
-  "author": "pikselcraft",
+  "author": "pikselkraft",
   "license": "ISCi",
   "repository": {
     "type": "git",

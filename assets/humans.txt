@@ -3,7 +3,7 @@
 
 # TEAM
 
-    Derek Salmon / pikselkraft-- frontend developer -- @drksalmon -- www.dereksalmon.me
+    Derek Salmon / pikselkraft-- frontend developer -- @pikselkraft -- www.dereksalmon.me
 
 # THANKS
 

@@ -1,5 +1,5 @@
 # Pikselkraft npm scripts
-This portfolio uses the last web standards and focuses on quality, accessibility and workflow optimisation.
+A simple boilerplate of NPM scripts which uses the last web standards and focuses on quality, accessibility and workflow optimisation.
 
 ## Workflow and technologies
 
